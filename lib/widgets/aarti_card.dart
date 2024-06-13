@@ -8,13 +8,21 @@ class AartiCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.yellow[100],
       child: InkWell(
         onTap: (){
           Navigator.push(context, MaterialPageRoute(builder: (context) => AartiDetailScreen(title: title)),
           );
         },
         child: Center(
-          child: Text(title),
+          child: Text(
+            title,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       )
     );
