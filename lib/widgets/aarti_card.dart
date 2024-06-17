@@ -1,9 +1,10 @@
+import 'package:aarti/models/aarti_model.dart';
 import 'package:flutter/material.dart';
 import 'package:aarti/screens/aarti_detail_screen.dart';
 
 class AartiCard extends StatelessWidget {
-  final String title;
-  AartiCard({required this.title});
+  final Aarti aarti;
+  AartiCard({required this.aarti});
 
   @override
   Widget build(BuildContext context) {
@@ -11,12 +12,12 @@ class AartiCard extends StatelessWidget {
       color: Colors.yellow[100],
       child: InkWell(
         onTap: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context) => AartiDetailScreen(title: title)),
+          Navigator.push(context, MaterialPageRoute(builder: (context) => AartiDetailScreen(aarti: aarti)),
           );
         },
         child: Center(
           child: Text(
-            title,
+            aarti.title,
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
