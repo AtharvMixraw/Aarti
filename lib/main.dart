@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'package:aarti/screens/home_screen.dart';
+
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Main Screen',
+      title: 'Aarti App',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.red,
       ),
-      home: const HomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
-
