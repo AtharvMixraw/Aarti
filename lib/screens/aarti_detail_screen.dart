@@ -1,16 +1,13 @@
-import 'dart:io';
-import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:aarti/models/aarti_model.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:screenshot/screenshot.dart';
 import 'package:aarti/screens/display_image_screen.dart';
 
 class AartiDetailScreen extends StatefulWidget {
   final Aarti aarti;
 
-  AartiDetailScreen({required this.aarti});
+  AartiDetailScreen({super.key, required this.aarti});
 
   @override
   _AartiDetailScreenState createState() => _AartiDetailScreenState();
@@ -28,7 +25,7 @@ class _AartiDetailScreenState extends State<AartiDetailScreen> {
         title: Text(widget.aarti.title),
         actions: [
           IconButton(
-            icon: Icon(Icons.share),
+            icon: const Icon(Icons.share),
             onPressed: selectedLines.isEmpty
                 ? null
                 : () {
@@ -72,8 +69,8 @@ class _AartiDetailScreenState extends State<AartiDetailScreen> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          backgroundColor: Colors.yellow,
-          title: Text('Meaning',
+          backgroundColor: Colors.pink.shade200,
+          title: const Text('Meaning',
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
@@ -112,7 +109,7 @@ class _AartiDetailScreenState extends State<AartiDetailScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
+          const Text(
             'Aarti App',
             style: TextStyle(
               fontFamily: 'SourceCodePro',
@@ -123,7 +120,7 @@ class _AartiDetailScreenState extends State<AartiDetailScreen> {
           SizedBox(height: 10),
           Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
               fontFamily: 'SourceCodePro',
               fontSize: 18,
             ),
