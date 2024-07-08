@@ -163,7 +163,8 @@
       "Hoye siddhi sakhi Gaureesa": "Attain success with the witness of Lord Shiva",
       "Tulsidas sada hari chera": "Tulsidas is always a servant of Hari",
       "Keejai Nath Hridaye mein dera": "O Lord, reside in my heart"
-    }
+    },
+    "backgroundImage": "assets/assets/images/hanumanJi.png"
   },
   "Ganesh Aarti": {
     "lyrics": [
@@ -189,7 +190,8 @@
       "Ladduan Ka Bhog Lage Sant Karein Seva": "Offerings of sweets are made, and saints serve",
       "Denan Ki Laaj Rakho Shambhu Suta": "Please uphold the honor of your devotees, O son of Shambhu",
       "Vighna Harata Mangal Karata Deva Ki Seva": "You remove obstacles and bring auspiciousness, serving the divine"
-    }
+    },
+    "backgroundImage": "assets/assets/images/ganeshJi.png"
   },
   "Shiva Aarti": {
     "lyrics": [
@@ -226,7 +228,8 @@
       "Trilochan Dashbhuj Dhari Trishuldamari": "The three-eyed one, with ten arms, holding a trident",
       "Gangadhar Shankar Omkar Shivay": "Ganga-bearer Shankar, the Omkara Shiva",
       "Uma Maheshwar Nandishwar Sahay": "Uma's consort, the great lord, with Nandi"
-    }
+    },
+    "backgroundImage": "assets/assets/images/shankarJi.jpg"
   },
   "Durga Aarti": {
     "lyrics": [
@@ -292,6 +295,7 @@
       "Yah Sadhu Soorat Tumhe, Sada Shiv Boli": "Sages and saints always speak of your beauty",
       "Dhayaantam Bhakti, Aasakti Apaar": "Devotion to you brings unparalleled attachment",
       "Sharan Mein Jo Aaye, Tumhi Ho Vichaar": "You protect those who come to you for refuge"
-    }
+    },
+    "backgroundImage": "assets/assets/images/durgaMa.png"
   }
 }

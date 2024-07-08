@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "158635760864",
+    "project_id": "aarti-30480",
+    "storage_bucket": "aarti-30480.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158635760864:android:36aab11a1b847255090485",
+        "android_client_info": {
+          "package_name": "com.example.aarti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1ScNf3gd12zSC2daKgkpGnHIPE62w6VM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

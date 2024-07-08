@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orange[200],
+        backgroundColor: Colors.white,
         title: const Center(
           child: Text(
             'Aarti',
@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       body: Container(
-        color: Colors.orangeAccent,
+        color: Colors.white38,
         child: FutureBuilder<List<Aarti>>(
           future: _loadAartiTitles(),
           builder: (context, snapshot) {

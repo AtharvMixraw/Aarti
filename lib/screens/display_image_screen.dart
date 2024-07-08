@@ -11,8 +11,10 @@ class DisplayImageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow.shade50,
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
         title: const Text(
           'Your Shloka',
           style: TextStyle(
@@ -20,15 +22,36 @@ class DisplayImageScreen extends StatelessWidget {
             color: Colors.black,
           ),
         ),
+        iconTheme: IconThemeData(color: Colors.black),
         actions: [
           IconButton(
-            icon: Icon(Icons.download),
+            icon: Icon(Icons.download, color: Colors.black),
             onPressed: () => _downloadImage(context),
           ),
         ],
       ),
       body: Center(
-        child: Image.memory(image),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.grey, width: 2),
+              borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3),
+                ),
+              ],
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.memory(image),
+            ),
+          ),
+        ),
       ),
     );
   }
@@ -40,8 +63,22 @@ class DisplayImageScreen extends StatelessWidget {
       final imageFile = File(imagePath);
       await imageFile.writeAsBytes(image);
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Image saved to $imagePath')),
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Success'),
+            content: Text('Image saved to $imagePath'),
+            actions: <Widget>[
+              TextButton(
+                child: Text('OK'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
       );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(

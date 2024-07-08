@@ -4,13 +4,13 @@ import 'package:aarti/models/aarti_model.dart';
 
 class AartiCard extends StatelessWidget {
   final Aarti aarti;
-
+  final Color myPink = Color(0xFFE7C0C9);
   AartiCard({required this.aarti});
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.orange[100],
+      color: myPink,
       child: InkWell(
         onTap: () {
           Navigator.push(
@@ -24,7 +24,7 @@ class AartiCard extends StatelessWidget {
             child: Text(
               aarti.title,
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 fontFamily: 'SourceCodePro',
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
