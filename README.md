@@ -7,11 +7,7 @@ Aarti is a Flutter application designed to bring the most popular aartis (devoti
 - **Comprehensive Aarti Collection:** Access a wide range of popular aartis for various Hindu gods.
 - **User-Friendly Interface:** Enjoy an intuitive and easy-to-navigate interface.
 - **Offline Access:** Save your favorite aartis and access them even without an internet connection.
-- **Search Functionality:** Quickly find specific aartis with the search feature.
-- **Favorites:** Mark aartis as favorites for quick access.
-- **Audio Playback:** Listen to high-quality audio of each aarti.
 - **Lyrics Display:** Follow along with the lyrics displayed on screen.
-- **Multilingual Support:** Available in multiple languages to cater to a diverse user base.
 
 ## Getting Started
 
@@ -56,10 +52,7 @@ aarti-flutter-app/
 |- README.md
 ```
 
-## Screenshots
-![Home Screen](screenshots/home_screen.png)
-![Aarti List](screenshots/aarti_list.png)
-![Aarti Details](screenshots/aarti_details.png)
+
 
 ## Usage
 1. **Home Screen:** Browse through the list of available aartis.
